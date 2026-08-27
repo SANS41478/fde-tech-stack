@@ -82,6 +82,7 @@ Redis      → Docker
 ---
 
 相关笔记：
+- [[Docker 与 exe 容器化核心概念]] —— 概念辨析：内核 / 可移植性 / 分发 / 开销 / DLL Hell
 - [[Docker Compose]] —— 多服务编排
 - [[Linux]] —— 容器运行宿主
 - [[云平台]] / [[CI/CD]] —— 镜像的归宿

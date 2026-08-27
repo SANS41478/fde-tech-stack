@@ -99,7 +99,9 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], ...)
 
 相关笔记：
 - [[Python]] —— FastAPI 的运行语言
+- [[后端基础]] —— 后端是什么、请求生命周期、本地也要 HTTP
 - [[REST API]] —— 接口设计基础
 - Pydantic（见 [[Python]] 技术栈）→ [[Structured Output]]
 - [[Docker]] / [[Docker Compose]] —— 部署
+- [[微服务]] —— 多服务场景下的位置
 - [[FDE 学习路线]] —— 第一阶段后端
