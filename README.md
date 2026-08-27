@@ -23,11 +23,11 @@ FDE技术栈知识库/
 │   ├── TypeScript.md
 │   └── Python 生态/         # Python 的「子节点」：FastAPI / pandas / asyncio / Pydantic / SQLAlchemy / pytest / subprocess / httpx
 ├── 20-前端/                 # React / Next.js / Tailwind CSS
-├── 30-后端/                 # Node.js / REST API
+├── 30-后端/                 # Node.js / REST API / 后端基础 / 微服务
 ├── 40-数据/                 # PostgreSQL / SQL / Redis / ETL 与数据管道
 ├── 50-AI/                   # LLM API / Prompt / Structured Output / Tool Calling / RAG / Embedding / Agent / MCP
 ├── 60-自动化/               # Playwright / Webhook / Cron
-├── 70-基础设施/             # Linux / Docker / Docker Compose / 云平台 / CI-CD
+├── 70-基础设施/             # Linux / Docker / Docker Compose / 云平台 / 国内云 / 云服务模型 / 部署方式 / Serverless / 静态托管与边缘 / DevOps / CI-CD
 ├── 80-系统集成/             # OAuth / JWT / SaaS 集成 / 企业系统集成
 └── 90-工程能力/             # Git / Debugging 与可观测性 / System Design
 ```
