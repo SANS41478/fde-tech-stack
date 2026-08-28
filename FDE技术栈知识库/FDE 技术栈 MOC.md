@@ -110,6 +110,7 @@ created: 2026-08-24
 
 ## 🔌 九、系统集成（FDE 的核心价值）
 
+- [[认证与授权机制]] —— API Key/OAuth/JWT/Webhook/Token 生命周期总览 + 授权框架哲学 + 匿名化实战
 - [[OAuth]] ——  delegated 授权框架
 - [[JWT]] —— 无状态令牌鉴权
 - [[SaaS 集成]] —— Salesforce / Slack / Notion 等

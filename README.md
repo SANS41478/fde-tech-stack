@@ -28,7 +28,7 @@ FDE技术栈知识库/
 ├── 50-AI/                   # LLM API / Prompt / Structured Output / Tool Calling / RAG / Embedding / Agent / MCP
 ├── 60-自动化/               # Playwright / Webhook / Cron
 ├── 70-基础设施/             # Linux / Docker / Docker Compose / 云平台 / 国内云 / 云服务模型 / 部署方式 / Serverless / 静态托管与边缘 / DevOps / CI-CD
-├── 80-系统集成/             # OAuth / JWT / SaaS 集成 / 企业系统集成
+├── 80-系统集成/             # 认证与授权机制 / OAuth / JWT / SaaS 集成 / 企业系统集成
 └── 90-工程能力/             # Git / Debugging 与可观测性 / System Design
 ```
 

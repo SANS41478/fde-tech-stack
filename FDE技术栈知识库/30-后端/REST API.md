@@ -10,6 +10,9 @@ created: 2026-08-24
 > [!abstract] 定位
 > **REST** 与 **GraphQL** 是 FDE 每天打交道的接口范式。FDE 的大量工作本质是「把不同系统连接起来」，所以理解 HTTP、REST、JSON、鉴权、限流、重试，比记住某个框架更重要。
 
+> [!note] 重要澄清：REST 是「接口设计风格」，不是「后端框架」
+> 常有人把 REST API 和 Django/FastAPI 并列叫「后端框架」——这是错的。REST 是**一套约定**（用 URL 表示资源、用 HTTP 动词表示操作、无状态、返回 JSON），不关心你用 Node.js、Python 还是 Go 实现；真正写服务的是其上的**框架**（FastAPI/Express）。三者的层次区分见 [[后端基础]] 的「三者不是一回事」，Node.js 的运行时定位见 [[Node.js]]。
+
 ---
 
 ## 一、REST 基础

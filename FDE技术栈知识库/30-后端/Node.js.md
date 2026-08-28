@@ -12,6 +12,9 @@ created: 2026-08-24
 
 ---
 
+> [!note] 重要澄清：Node.js 是「运行时」，不是「后端框架」
+> 常有人把 Node.js 和 Django/FastAPI 并列叫「后端框架」——这是错的。Node.js 是 **JavaScript 的服务端运行时**（类比 Python 解释器），它让 JS 能跑在服务器上；真正写服务要用其上的**框架**（Express / Fastify / NestJS）。三者的层次区分见 [[后端基础]] 的「三者不是一回事」，以及 [[REST API]] 的设计风格定位。
+
 ## 一、Node 适合 FDE 的场景
 
 - **轻量 API / [[Webhook]] 接收端**：处理第三方回调、转发事件。
