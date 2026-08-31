@@ -87,7 +87,7 @@ created: 2026-08-24
 ## 🧠 六点五、DeepSeek Harness（Agent 框架深度剖析）
 
 > [!tip] 从零到一完全指南
-> 一套 **20 篇递进式笔记**，让零基础读者从第一性原理理解 DeepSeek Harness 的架构，并具备开发能力。
+> 一套 **21 篇递进式笔记**，让零基础读者从第一性原理理解 DeepSeek Harness 的架构，并具备开发能力。
 > 源码仓库：[deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
 
 ### 学习路线
@@ -121,6 +121,10 @@ created: 2026-08-24
 
 - [[15-从零写一个最小 Agent]] —— Python 版，逐行注释
 - [[16-对比与总结]] —— Agent.md vs Harness 完整映射表
+
+### 深度专题
+
+- [[17-ReAct 深度解析与 Agent 架构层级详解]] —— ReAct 原理 + 架构层级 + Session Log + 插件化 + 多 Agent + 安全 + 流式 Token + Goal
 
 ### 附录
 
