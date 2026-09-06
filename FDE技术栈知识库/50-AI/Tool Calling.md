@@ -76,6 +76,9 @@ resp = client.chat.completions.create(
 - **幂等**：工具可能被重试，写操作要安全。
 - **失败可恢复**：工具报错要返回可读信息，让模型自我纠正。
 
+> [!tip] 深入：ACI 与工具生态
+> 工具设计已演化为一门系统的工程学科（ACI，Agent-Computer Interface）：专用工具 vs Skill + 通用执行器的选择、粒度权衡、参数传递保真性、Sidecar 安全审查、主动工具发现等——详见 [[工具设计原则]]。工具太多时的延迟加载与语义检索方案也在其中。
+
 ---
 
 ## 五、常见坑
@@ -92,4 +95,6 @@ resp = client.chat.completions.create(
 - [[Structured Output]] —— 更基础的结构化
 - [[Agent]] —— 工具调用组成的循环
 - [[MCP]] —— 工具调用的标准化协议
+- [[工具设计原则]] —— ACI / 粒度 / Sidecar / 主动发现
+- [[Agent Skills]] —— Skill + 通用执行器路线
 - [[RAG]] / [[Playwright]] —— 典型工具实现

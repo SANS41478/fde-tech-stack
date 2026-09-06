@@ -78,6 +78,8 @@ with sync_playwright() as p:
 
 相关笔记：
 - [[Agent]] —— 浏览器作为工具
+- [[Computer Use]] —— 通用 Agent 的 GUI 自动化（视觉定位 / SoM / 坐标缩放）
+- [[事件驱动 Agent]] —— 后台任务监控与浏览器工作流固化
 - [[Webhook]] / [[Cron]] —— 触发与调度
 - [[ETL 与数据管道]] —— 抓取是 Extract 的一环
 - [[Docker]] —— 容器化运行
