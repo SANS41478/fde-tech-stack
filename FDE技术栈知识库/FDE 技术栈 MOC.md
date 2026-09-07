@@ -176,6 +176,21 @@ created: 2026-08-24
 
 ---
 
+## 🏢 九点五、Palantir Ontology（企业数字孪生与操作语义层）
+
+> [!tip] 为什么 FDE 要了解 Palantir Ontology
+> Ontology 是 Palantir 的核心架构，也是 AI Agent 落地的关键模式。
+> 理解 Ontology = 理解"如何让 AI Agent 可靠地操作企业业务"。
+
+- [[Palantir Ontology 核心概念]] —— 什么是 Ontology，为什么它重要
+- [[Palantir Ontology 三层架构]] —— 语义层、动力层、动态层的详细拆解
+- [[Palantir Ontology 与传统方案对比]] —— 与 ETL、BI、知识图谱、数据中台的区别
+- [[Palantir Ontology 落地案例]] —— 供应链、医院、食品追溯等真实场景
+- [[Palantir FDE 与 Ontology]] —— FDE 模式为什么需要 Ontology，以及 FDE 的局限
+- [[Palantir AIP 与 AI 集成]] —— LLM 如何通过 Ontology 操作业务（OAG、Scenario Branching、AI FDE）
+
+---
+
 ## 🔗 跨板块主线
 
 > [!tip] 如何用这个知识库
