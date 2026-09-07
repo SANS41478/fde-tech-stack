@@ -67,6 +67,9 @@ resp = client.chat.completions.create(
 > [!tip] 和 [[Structured Output]] 的关系
 > Tool Calling 本质是把「输出」定义成函数参数 schema，因此比纯 JSON 更可靠，是结构化输出的升级形态。
 
+> [!important] 它是 API 服务层的「纯规范」，不是模型自带
+> 原始裸模型只会吐文字。Tools 是 API 服务层在 System Prompt 最底层偷偷注入的「隐形工具使用说明书」，并配合 **约束采样（Constrained Decoding）** 在 GPU 层面强行让模型只输出合法 JSON。**API 统一的是「语文」（`{"name": ..., "arguments": ...}` 的动作描述语法），而不是「职业」（具体工具）**——无论查天气还是订机票，JSON 骨架完全一致。因此这份能力绑定在 API 协议上：换推理引擎或绕过 API 自行拼接时，需自行重建这套注入与约束机制（见 [[LLM API]] 与 [[KV Cache]]）。
+
 ---
 
 ## 四、设计好工具的要点
@@ -93,6 +96,7 @@ resp = client.chat.completions.create(
 
 相关笔记：
 - [[Structured Output]] —— 更基础的结构化
+- [[LLM API]] —— 采样参数 / 计费 / 底层格式与上层 API 的映射
 - [[Agent]] —— 工具调用组成的循环
 - [[MCP]] —— 工具调用的标准化协议
 - [[工具设计原则]] —— ACI / 粒度 / Sidecar / 主动发现
