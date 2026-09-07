@@ -71,6 +71,15 @@ MCP Server（暴露 Tools / Resources / Prompts）
 > - **Server 不可观测**：调用失败难排查，需日志（见 [[Debugging 与可观测性]]）。
 > - **协议版本漂移**：客户端与服务端协议不一致会连不上，锁定版本。
 > - **过度抽象**：简单场景直接 [[Tool Calling]] 即可，不必为上 MCP 而上 MCP。
+> - **第三方 Server 的信任风险**：工具描述投毒（description 随定义进入上下文）、同名工具遮蔽、供应链攻击、凭证外流——把 description 当不可信输入审计，锁定版本拒绝静默更新（详见 [[工具设计原则]] 与 [[提示注入]]）。
+
+---
+
+## 六、进阶视角
+
+- **MCP 不提供事件运行时**：它标准化「一次能力调用」，跨会话、多事件源、离线唤醒需 Agent 框架另行构建（见 [[事件驱动 Agent]]）。
+- **上下文开销**：5 个 MCP Server 可引入数万 token 工具定义——延迟加载（只注入名称索引）与代理工具模式可省近一半（见 [[工具设计原则]]）。
+- **MCP vs A2A vs Skills**：MCP 管 Agent↔工具互操作；A2A 管 Agent↔Agent 跨组织互操作（见 [[多 Agent 协作]]）；Skills 管能力的组织与按需披露（见 [[Agent Skills]]），Skills 也可以经 MCP 被发现和传递。
 
 ---
 
@@ -78,4 +87,7 @@ MCP Server（暴露 Tools / Resources / Prompts）
 - [[Tool Calling]] —— MCP 暴露的能力基础
 - [[Agent]] —— MCP 服务的消费者
 - [[企业系统集成]] —— MCP 要连接的对象
+- [[工具设计原则]] —— 工具生态、延迟加载与安全
+- [[Agent Skills]] —— Skills over MCP
+- [[多 Agent 协作]] —— A2A 协议与 MCP 的对照
 - [[Docker]] —— 容器化 MCP Server

@@ -5,12 +5,13 @@
 
 ## 这是什么
 
-本项目把一份 FDE 技术栈完整指南，拆成可在 [Obsidian](https://obsidian.md) 中使用的**双向链接知识库**：
+本项目把 FDE 技术栈的资料，拆成可在 [Obsidian](https://obsidian.md) 中使用的**双向链接知识库**：
 
 - **原子化笔记**：一个技术 / 概念一篇，便于链接与复用。
 - **双向链接**：全文用 `[[wikilinks]]` 互相连接，图谱视图可见知识网络。
 - **统一结构**：每篇按「定位 → 为什么 → 实战示例 → 常见坑 → 相关笔记」展开。
 - **Callout 提示框**：用 Obsidian 原生 `> [!note] / [!tip] / [!warning]` 区分要点、经验与坑。
+- **体系化材料的分散融入**：长篇体系化材料不单开模块，而是拆成原子笔记**分散融入现有板块**并反向增强原有笔记（例：《深入理解 AI Agent》全书 10 章已融入「六、AI」「七、自动化」「十、工程能力」，映射表见 MOC 跨板块主线）。
 
 ## 目录结构
 
@@ -26,10 +27,12 @@ FDE技术栈知识库/
 ├── 30-后端/                 # Node.js / REST API / 后端基础 / 微服务
 ├── 40-数据/                 # PostgreSQL / SQL / Redis / ETL 与数据管道
 ├── 50-AI/                   # LLM API / Prompt / Structured Output / Tool Calling / RAG / Embedding / Agent / MCP
-├── 60-自动化/               # Playwright / Webhook / Cron
+│   └── （Agent 进阶）       # Harness 工程 / 上下文工程 / KV Cache / 上下文压缩... 见 MOC「六、AI」
+│       └── DeepSeek Harness 从零到一指南/   # 21 篇源码级拆解
+├── 60-自动化/               # Playwright / Webhook / Cron / 事件驱动 Agent / Computer Use
 ├── 70-基础设施/             # Linux / Docker / Docker Compose / 云平台 / 国内云 / 云服务模型 / 部署方式 / Serverless / 静态托管与边缘 / DevOps / CI-CD
 ├── 80-系统集成/             # 认证与授权机制 / OAuth / JWT / SaaS 集成 / 企业系统集成
-└── 90-工程能力/             # Git / Debugging 与可观测性 / System Design
+└── 90-工程能力/             # Git / Debugging 与可观测性 / System Design / Agent 评估
 ```
 
 另有一份原始长文：`FDE（Forward Deployed Engineer）技术栈完整指南.md`，是整套笔记的母本。
@@ -49,9 +52,9 @@ FDE技术栈知识库/
 |---|---|---|
 | 应用层 | 前端（界面）/ 后端（API） | React / Next.js / FastAPI / Node.js |
 | 数据层 | 存储 / 处理 / ETL | PostgreSQL / SQL / Redis / pandas |
-| AI 层 | 模型编排（FDE 核心） | LLM API / RAG / Agent / MCP / Pydantic |
+| AI 层 | 模型编排（FDE 核心） | LLM API / RAG / Agent / MCP / Pydantic / 上下文工程 / Harness / Agent 评估 |
 | 集成层 | 连外部系统 | httpx / OAuth / SaaS / 企业系统 |
-| 自动化层 | 替代重复劳动 | subprocess / Playwright / Cron |
+| 自动化层 | 替代重复劳动 | subprocess / Playwright / Cron / 事件驱动 Agent / Computer Use |
 | 基础设施层 | 能部署能跑 | Linux / Docker / 云平台 / CI-CD |
 | 工程能力层 | 质量与可维护 | pytest / Git / Debugging / System Design |
 

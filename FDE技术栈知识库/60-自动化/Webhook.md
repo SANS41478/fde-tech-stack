@@ -76,5 +76,6 @@ async def crm_webhook(payload: dict):
 相关笔记：
 - [[REST API]] —— 拉取式对照
 - [[Cron]] —— 定时触发对照
+- [[事件驱动 Agent]] —— Webhook 是 Agent 外部事件通道的基础设施
 - [[企业系统集成]] —— Webhook 是连接手段
 - [[Redis]] —— 缓冲与去重

@@ -839,6 +839,8 @@ Agent："认证模块重构完成，所有测试通过"
 
 ## 相关笔记
 
+- [[Harness 工程]] / [[上下文工程]] / [[Agent 评估]] —— 设计原理视角的Harness五要素、上下文与评估
+
 - [[02-核心概念]] — Agent = LLM + Tools + Loop
 - [[07-Agent Loop 深度拆解]] — ReactLoopAgent 源码详解
 - [[08-工具系统]] — 工具注册和执行
