@@ -18,21 +18,22 @@
 ```text
 FDE技术栈知识库/
 ├── FDE 技术栈 MOC.md        # 总索引（Map of Content），从这里进入
-├── 00-概念/                 # 角色定义 / 工作方式 / 能力模型 / 学习路线 / 练习项目
+├── 00-概念/                 # 角色定义 / 工作方式 / 产品验证 / PRD / 学习路线 / 练习项目 / 反馈迭代
 ├── 10-编程语言/
 │   ├── Python.md            # Python 语言本身
 │   ├── TypeScript.md
+│   ├── Node.js 项目环境与本地运行.md
 │   └── Python 生态/         # Python 的「子节点」：FastAPI / pandas / asyncio / Pydantic / SQLAlchemy / pytest / subprocess / httpx
-├── 20-前端/                 # React / Next.js / Tailwind CSS
-├── 30-后端/                 # Node.js / REST API / 后端基础 / 微服务
-├── 40-数据/                 # PostgreSQL / SQL / Redis / ETL 与数据管道
-├── 50-AI/                   # LLM API / Prompt / Structured Output / Tool Calling / RAG / Embedding / Agent / MCP
+├── 20-前端/                 # React / Next.js / Tailwind CSS / UI UX / 设计系统 / 动效
+├── 30-后端/                 # Node.js / REST API / API 产品化 / 后端基础 / 微服务
+├── 40-数据/                 # PostgreSQL / SQL / Redis / ETL / 托管数据库 / Drizzle
+├── 50-AI/                   # LLM API / Prompt / Structured Output / Tool Calling / RAG / Embedding / Agent / MCP / Claude Code 工作流
 │   └── （Agent 进阶）       # Harness 工程 / 上下文工程 / KV Cache / 上下文压缩... 见 MOC「六、AI」
 │       └── DeepSeek Harness 从零到一指南/   # 21 篇源码级拆解
 ├── 60-自动化/               # Playwright / Webhook / Cron / 事件驱动 Agent / Computer Use
-├── 70-基础设施/             # Linux / Docker / Docker Compose / 云平台 / 国内云 / 云服务模型 / 部署方式 / Serverless / 静态托管与边缘 / DevOps / CI-CD
-├── 80-系统集成/             # 认证与授权机制 / OAuth / JWT / SaaS 集成 / 企业系统集成
-└── 90-工程能力/             # Git / Debugging 与可观测性 / System Design / Agent 评估
+├── 70-基础设施/             # Linux / Docker / Docker Compose / 云平台 / 域名 DNS HTTPS / VPS / 1Panel / Serverless / DevOps / CI-CD
+├── 80-系统集成/             # 认证与授权机制 / OAuth / JWT / Web 用户认证与安全 / SaaS 集成 / 企业系统集成
+└── 90-工程能力/             # Git / Debugging / System Design / Agent 评估 / Web 测试 / SEO 与产品分析
 ```
 
 另有一份原始长文：`FDE（Forward Deployed Engineer）技术栈完整指南.md`，是整套笔记的母本。

@@ -95,3 +95,4 @@ curl -X POST https://api.example.com/analyze \
 - [[OAuth]] / [[JWT]] —— 鉴权
 - [[Webhook]] —— 事件驱动补充
 - [[企业系统集成]] —— 真实系统的连接
+- [[API 产品化]] —— 分页、错误、幂等、版本、上传和实时接口

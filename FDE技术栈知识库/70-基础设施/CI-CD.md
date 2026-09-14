@@ -63,6 +63,18 @@ jobs:
 ```
 > 真实部署步骤接云 Registry 与服务器，密钥用仓库 Secrets。
 
+### Git Hooks 与分支环境
+
+将快速检查放在本地 Hook，将完整验证放在 CI：
+
+```text
+提交前：format / typecheck / lint / unit test
+Pull Request：build / API test / 关键 E2E / 安全扫描
+合并 main：部署 preview 或 production
+```
+
+推荐让 `main` 始终可部署，功能在分支完成；高风险改动使用 Preview、Feature Flag 或小流量灰度，详见 [[Git]]、[[Web 测试与 E2E]]、[[用户反馈与产品迭代]]。
+
 ---
 
 ## 三·补、流水线到底「测」什么

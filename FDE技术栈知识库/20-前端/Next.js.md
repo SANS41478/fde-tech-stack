@@ -88,4 +88,9 @@ export async function GET() {
 - [[React]] —— Next 的 UI 基础
 - [[Tailwind CSS]] —— 快速样式
 - [[FastAPI]] —— 重 AI 后端的可选拆分
+- [[UI UX、设计系统与动效]] —— 页面状态、设计系统和交互质量
+- [[API 产品化]] —— API Route 的契约、校验和演进
+- [[Web 用户认证与安全]] —— Middleware、Session 与 RBAC
+- [[Web 测试与 E2E]] —— 关键页面与用户旅程验证
+- [[Node.js 项目环境与本地运行]] —— 项目初始化、构建和 localhost
 - [[FDE 学习路线]] —— 第二阶段核心
