@@ -3,6 +3,14 @@ title: Next.js
 aliases: [Nextjs, next, Next JS, 全栈 React 框架]
 tags: [fde, frontend, fullstack]
 created: 2026-08-24
+type: reference
+domain: frontend
+layer: foundation
+canonical: true
+canonical_group: frontend-nextjs
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Next.js

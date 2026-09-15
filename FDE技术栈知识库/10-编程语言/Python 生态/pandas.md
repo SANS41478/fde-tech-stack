@@ -3,6 +3,13 @@ title: pandas
 aliases: [pandas, DataFrame, 数据处理, 数据分析]
 tags: [fde, python, data, dataframe]
 created: 2026-08-24
+type: reference
+domain: language
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # pandas

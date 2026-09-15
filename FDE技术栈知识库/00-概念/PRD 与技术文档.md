@@ -3,6 +3,13 @@ title: PRD 与技术文档
 aliases: [PRD, 产品需求文档, 技术方案, 文档驱动开发, Spec]
 tags: [fde, product, prd, documentation, engineering]
 created: 2026-09-14
+type: concept
+domain: concept
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # PRD 与技术文档

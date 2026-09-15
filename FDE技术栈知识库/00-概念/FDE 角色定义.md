@@ -3,6 +3,14 @@ title: FDE 角色定义
 aliases: [Forward Deployed Engineer, 前线部署工程师, 现场解决方案工程师, 什么是 FDE]
 tags: [fde, concept, role]
 created: 2026-08-24
+type: concept
+domain: concept
+layer: foundation
+canonical: true
+canonical_group: fde-role
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # FDE 角色定义

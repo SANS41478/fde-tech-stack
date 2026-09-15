@@ -3,6 +3,13 @@ title: FDE 工作方式
 aliases: [FDE 工作流, FDE 交付循环, FDE 怎么干活]
 tags: [fde, concept, workflow]
 created: 2026-08-24
+type: concept
+domain: concept
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # FDE 工作方式
@@ -77,7 +84,7 @@ created: 2026-08-24
 ### 2. 用最小原型验证最大假设
 不要一上来就做完整系统。先验证「**最不确定的那一步**」：
 - 不确定模型能不能抽对字段？先拿 10 条样例数据试 [[Prompt 工程]]。
-- 不确定客户 API 能不能连？先用 [[curl]] / [[Python]] 脚本探一下。
+- 不确定客户 API 能不能连？先用 `curl` / [[Python]] 脚本探一下。
 
 > 先用 [[产品验证与用户访谈]] 判断问题是否真实，再用 [[PRD 与技术文档]] 固化范围和验收标准；两者不是「先写长文档再开发」，而是为循环迭代提供共同上下文。
 

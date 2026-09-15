@@ -3,6 +3,13 @@ title: UI UX、设计系统与动效
 aliases: [UI/UX, 用户体验, 设计系统, 前端动效, Web 动画]
 tags: [fde, frontend, ui, ux, design-system, animation]
 created: 2026-09-14
+type: reference
+domain: frontend
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # UI UX、设计系统与动效

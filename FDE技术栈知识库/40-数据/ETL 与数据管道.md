@@ -3,6 +3,13 @@ title: ETL 与数据管道
 aliases: [ETL, ELT, Data Pipeline, 数据管道, 数据流水线]
 tags: [fde, data, pipeline, integration]
 created: 2026-08-24
+type: reference
+domain: data
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # ETL 与数据管道

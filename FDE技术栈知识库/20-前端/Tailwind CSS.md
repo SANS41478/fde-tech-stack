@@ -3,6 +3,14 @@ title: Tailwind CSS
 aliases: [Tailwind, tailwindcss, 原子化 CSS]
 tags: [fde, frontend, css]
 created: 2026-08-24
+type: reference
+domain: frontend
+layer: foundation
+canonical: true
+canonical_group: frontend-tailwind
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Tailwind CSS

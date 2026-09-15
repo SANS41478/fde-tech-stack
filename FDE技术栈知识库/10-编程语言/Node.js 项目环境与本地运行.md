@@ -3,6 +3,13 @@ title: Node.js 项目环境与本地运行
 aliases: [Node 环境, pnpm, nvm, localhost, 本地开发环境]
 tags: [fde, nodejs, tooling, environment, cli]
 created: 2026-09-14
+type: guide
+domain: language
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Node.js 项目环境与本地运行

@@ -3,6 +3,14 @@ title: TypeScript
 aliases: [TypeScript, JavaScript, TS, JS, 前端语言]
 tags: [fde, language, frontend]
 created: 2026-08-24
+type: reference
+domain: language
+layer: foundation
+canonical: true
+canonical_group: language-typescript
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # TypeScript

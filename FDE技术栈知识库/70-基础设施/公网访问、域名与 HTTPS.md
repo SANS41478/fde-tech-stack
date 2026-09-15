@@ -3,6 +3,13 @@ title: 公网访问、域名与 HTTPS
 aliases: [内网穿透, DNS, HTTPS, SSL, Cloudflare Tunnel, ICP 备案]
 tags: [fde, infra, networking, dns, https, deployment]
 created: 2026-09-14
+type: reference
+domain: infra
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # 公网访问、域名与 HTTPS

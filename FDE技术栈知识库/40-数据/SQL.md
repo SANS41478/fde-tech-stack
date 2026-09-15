@@ -3,6 +3,14 @@ title: SQL
 aliases: [sql, SQL 语言, 结构化查询语言, 查询语言]
 tags: [fde, database, sql, skill]
 created: 2026-08-24
+type: reference
+domain: data
+layer: foundation
+canonical: true
+canonical_group: data-sql
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # SQL 基础

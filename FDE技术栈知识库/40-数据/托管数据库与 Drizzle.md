@@ -3,6 +3,13 @@ title: 托管数据库与 Drizzle
 aliases: [Neon, Supabase, Drizzle ORM, 云数据库]
 tags: [fde, data, database, drizzle, postgres, supabase]
 created: 2026-09-14
+type: reference
+domain: data
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # 托管数据库与 Drizzle

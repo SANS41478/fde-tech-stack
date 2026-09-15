@@ -3,6 +3,14 @@ title: Computer Use
 aliases: [GUI 自动化, 电脑操控 Agent, SoM, 视觉定位, 机器人操作, VLA, 世界模型]
 tags: [fde, ai, agent, computer-use, gui, robotics]
 created: 2026-09-06
+type: reference
+domain: automation
+layer: advanced
+canonical: true
+canonical_group: automation-computer-use
+status: evolving
+updated: 2026-09-15
+sources: []
 ---
 
 # Computer Use：GUI 自动化 Agent（与机器人操作延伸）

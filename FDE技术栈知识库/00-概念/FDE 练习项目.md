@@ -3,6 +3,13 @@ title: FDE 练习项目
 aliases: [FDE 项目, FDE 练手项目, FDE portfolio]
 tags: [fde, concept, project]
 created: 2026-08-24
+type: concept
+domain: concept
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # FDE 练习项目

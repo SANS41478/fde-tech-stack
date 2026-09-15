@@ -3,6 +3,14 @@ title: REST API
 aliases: [REST, RESTful, GraphQL, API 设计, 接口设计]
 tags: [fde, backend, api, integration]
 created: 2026-08-24
+type: reference
+domain: backend
+layer: foundation
+canonical: true
+canonical_group: backend-api
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # REST API 与接口设计

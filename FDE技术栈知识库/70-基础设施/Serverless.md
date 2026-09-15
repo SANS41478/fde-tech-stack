@@ -3,6 +3,13 @@ title: Serverless
 aliases: [FaaS, 函数即服务, 无服务器, Lambda, Cloud Functions]
 tags: [fde, infra, devops, serverless]
 created: 2026-08-27
+type: reference
+domain: infra
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Serverless / FaaS

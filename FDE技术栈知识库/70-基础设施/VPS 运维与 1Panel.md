@@ -3,6 +3,13 @@ title: VPS 运维与 1Panel
 aliases: [云服务器运维, 1Panel, 服务器部署, VPS]
 tags: [fde, infra, vps, linux, docker, operations]
 created: 2026-09-14
+type: reference
+domain: infra
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # VPS 运维与 1Panel

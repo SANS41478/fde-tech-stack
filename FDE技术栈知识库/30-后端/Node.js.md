@@ -3,6 +3,13 @@ title: Node.js
 aliases: [Nodejs, node, Node JS, JS 运行时]
 tags: [fde, backend, javascript, runtime]
 created: 2026-08-24
+type: reference
+domain: backend
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Node.js

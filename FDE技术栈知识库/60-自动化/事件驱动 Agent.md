@@ -3,6 +3,13 @@ title: 事件驱动 Agent
 aliases: [异步 Agent, 事件驱动架构, Event-Driven Agent, 异步与事件驱动, 语音交互, 异步事件]
 tags: [fde, ai, agent, async, event, voice]
 created: 2026-09-06
+type: reference
+domain: automation
+layer: advanced
+canonical: false
+status: evolving
+updated: 2026-09-15
+sources: []
 ---
 
 # 交互：异步与事件驱动（含语音）

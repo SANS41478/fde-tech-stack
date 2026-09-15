@@ -3,6 +3,14 @@ title: FDE 技术栈 MOC
 aliases: [FDE 技术栈地图, FDE Tech Stack Map, FDE 知识库索引]
 tags: [fde, moc, index]
 created: 2026-08-24
+type: moc
+domain: concept
+layer: foundation
+canonical: true
+canonical_group: knowledge-map
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # FDE 技术栈 MOC
@@ -121,7 +129,7 @@ created: 2026-08-24
 
 ---
 
-## 🧠 六点五、DeepSeek Harness（Agent 框架深度剖析）
+## 🧠 AI 工程深潜：DeepSeek Harness（Agent 框架深度剖析）
 
 > [!tip] 从零到一完全指南
 > 一套 **21 篇递进式笔记**，让零基础读者从第一性原理理解 DeepSeek Harness 的架构，并具备开发能力。
@@ -186,6 +194,7 @@ created: 2026-08-24
 - [[Linux]] —— 命令行与服务器排查
 - [[Docker]] —— 容器化交付
 - [[Docker Compose]] —— 多服务编排
+- [[Docker 与 exe 容器化核心概念]] —— 内核、可移植性、分发与开销
 - [[云平台]] —— AWS / GCP / Azure 选一个深入
 - [[国内云]] —— 阿里云 / 腾讯云 / 火山引擎 / 华为云
 - [[云服务模型]] —— IaaS / PaaS / SaaS / FaaS 责任档位
@@ -195,7 +204,7 @@ created: 2026-08-24
 - [[公网访问、域名与 HTTPS]] —— 局域网、内网穿透、DNS、证书与备案
 - [[VPS 运维与 1Panel]] —— 服务器初始化、安全加固与项目部署
 - [[DevOps]] —— 交付文化与 CI/CD 测试本质
-- [[CI/CD]] —— 持续集成与持续部署
+- [[CI-CD|CI/CD]] —— 持续集成与持续部署
 
 ---
 
@@ -221,7 +230,7 @@ created: 2026-08-24
 
 ---
 
-## 🏢 九点五、Palantir Ontology（企业数字孪生与操作语义层）
+## 🏢 专题：Palantir Ontology（企业数字孪生与操作语义层）
 
 > [!tip] 为什么 FDE 要了解 Palantir Ontology
 > Ontology 是 Palantir 的核心架构，也是 AI Agent 落地的关键模式。

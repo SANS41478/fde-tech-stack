@@ -3,6 +3,14 @@ title: System Design
 aliases: [系统设计, 架构设计, System Architecture, 系统设计能力]
 tags: [fde, engineering, design, architecture]
 created: 2026-08-24
+type: reference
+domain: engineering
+layer: foundation
+canonical: true
+canonical_group: engineering-system-design
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # System Design（系统设计）

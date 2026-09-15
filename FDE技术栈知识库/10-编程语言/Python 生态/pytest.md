@@ -3,6 +3,13 @@ title: pytest
 aliases: [pytest, py.test, 测试, Python 测试]
 tags: [fde, python, testing, quality]
 created: 2026-08-24
+type: reference
+domain: language
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # pytest（测试）

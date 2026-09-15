@@ -3,6 +3,13 @@ title: asyncio
 aliases: [asyncio, 异步, 异步并发, async/await]
 tags: [fde, python, async, concurrency]
 created: 2026-08-24
+type: reference
+domain: language
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # asyncio（异步并发）

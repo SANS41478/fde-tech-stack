@@ -1,3 +1,16 @@
+---
+title: FDE（Forward Deployed Engineer）技术栈完整指南
+tags: [fde, guide, archive]
+created: 2026-08-24
+type: guide
+domain: concept
+layer: foundation
+canonical: false
+status: archive
+updated: 2026-09-15
+sources: []
+---
+
 # FDE（Forward Deployed Engineer）技术栈完整指南
 
 ## 1. 什么是 FDE

@@ -3,6 +3,13 @@ title: API 产品化
 aliases: [接口产品化, API 演进, API 版本管理, 文件上传 API]
 tags: [fde, backend, api, productization]
 created: 2026-09-14
+type: reference
+domain: backend
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # API 产品化

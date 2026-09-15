@@ -3,6 +3,14 @@ title: CI/CD
 aliases: [CI, CD, 持续集成, 持续部署, 流水线, Pipeline]
 tags: [fde, infra, devops, automation]
 created: 2026-08-24
+type: reference
+domain: infra
+layer: foundation
+canonical: true
+canonical_group: infra-cicd
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # CI/CD（持续集成与持续部署）

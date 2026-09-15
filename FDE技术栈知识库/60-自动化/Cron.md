@@ -3,6 +3,14 @@ title: Cron
 aliases: [cron, 定时任务, 计划任务, 周期作业]
 tags: [fde, automation, scheduling]
 created: 2026-08-24
+type: reference
+domain: automation
+layer: foundation
+canonical: true
+canonical_group: automation-cron
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Cron 与定时任务

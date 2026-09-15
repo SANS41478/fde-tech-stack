@@ -3,6 +3,14 @@ title: Docker
 aliases: [docker, 容器, 容器化, Container]
 tags: [fde, infra, docker, deployment]
 created: 2026-08-24
+type: reference
+domain: infra
+layer: foundation
+canonical: true
+canonical_group: infra-docker
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Docker
@@ -17,7 +25,7 @@ created: 2026-08-24
 - **环境一致性**：告别「我本地能跑」。客户/生产用同一镜像。
 - **快速交付**：一条命令起整套依赖，不用手装软件。
 - **隔离**：不同项目依赖互不污染。
-- **部署前置**：[[云平台]]、[[CI/CD]] 都围绕容器运转。
+- **部署前置**：[[云平台]]、[[CI-CD|CI/CD]] 都围绕容器运转。
 
 > [!tip] FDE 判据
 > Docker 是「能写出来，也能部署出来」的分水岭能力之一。
@@ -85,5 +93,5 @@ Redis      → Docker
 - [[Docker 与 exe 容器化核心概念]] —— 概念辨析：内核 / 可移植性 / 分发 / 开销 / DLL Hell
 - [[Docker Compose]] —— 多服务编排
 - [[Linux]] —— 容器运行宿主
-- [[云平台]] / [[CI/CD]] —— 镜像的归宿
+- [[云平台]] / [[CI-CD|CI/CD]] —— 镜像的归宿
 - [[PostgreSQL]] / [[Redis]] —— 常容器化的组件
