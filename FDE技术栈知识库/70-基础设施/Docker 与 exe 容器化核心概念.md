@@ -3,6 +3,13 @@ title: Docker 与 exe 容器化核心概念
 aliases: [容器化核心概念, Docker 与 exe, 容器 vs exe]
 tags: [fde, infra, docker, container, exe, 可移植性]
 created: 2026-08-27
+type: reference
+domain: infra
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Docker 与 exe 容器化核心概念
@@ -217,4 +224,4 @@ exe 直跑时，所有程序活在**同一个宿主全局环境**：共享 `Syst
 - [[Linux]] —— 容器运行的宿主与内核来源
 - [[Docker Compose]] —— 多容器编排
 - [[Python]] —— 常被打进镜像的语言
-- [[云平台]] / [[CI/CD]] —— 镜像的归宿
+- [[云平台]] / [[CI-CD|CI/CD]] —— 镜像的归宿

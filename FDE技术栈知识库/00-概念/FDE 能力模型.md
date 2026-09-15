@@ -3,6 +3,13 @@ title: FDE 能力模型
 aliases: [FDE 能力结构, FDE 核心能力, FDE competency]
 tags: [fde, concept, capability]
 created: 2026-08-24
+type: concept
+domain: concept
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # FDE 能力模型

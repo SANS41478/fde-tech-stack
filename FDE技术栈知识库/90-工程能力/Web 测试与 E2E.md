@@ -3,6 +3,14 @@ title: Web 测试与 E2E
 aliases: [API 测试, E2E 测试, 端到端测试, Flaky Test, TDD]
 tags: [fde, engineering, testing, e2e, playwright]
 created: 2026-09-14
+type: reference
+domain: engineering
+layer: foundation
+canonical: true
+canonical_group: engineering-web-test
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Web 测试与 E2E
@@ -101,7 +109,7 @@ tests/
 安装依赖 → 构建 → API 测试 → 关键 E2E → 安全扫描
 ```
 
-把完整测试放 CI，不要让本地 Hook 成为唯一质量门槛。详见 [[CI/CD]]。
+把完整测试放 CI，不要让本地 Hook 成为唯一质量门槛。详见 [[CI-CD|CI/CD]]。
 
 ## 六、TDD 的轻量用法
 
@@ -133,5 +141,5 @@ FDE 不需要所有功能都严格 TDD；对支付、权限、数据迁移、核
 - [[Playwright]]
 - [[API 产品化]]
 - [[Web 用户认证与安全]]
-- [[CI/CD]]
+- [[CI-CD|CI/CD]]
 - [[Debugging 与可观测性]]

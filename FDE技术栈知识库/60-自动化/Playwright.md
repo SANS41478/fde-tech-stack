@@ -3,6 +3,14 @@ title: Playwright
 aliases: [playwright, 浏览器自动化, 网页自动化, E2E]
 tags: [fde, automation, browser, scraping]
 created: 2026-08-24
+type: reference
+domain: automation
+layer: foundation
+canonical: true
+canonical_group: automation-playwright
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Playwright

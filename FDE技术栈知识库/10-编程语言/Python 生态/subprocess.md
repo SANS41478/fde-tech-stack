@@ -3,6 +3,13 @@ title: subprocess
 aliases: [subprocess, 子进程, 调系统命令, 系统命令调用]
 tags: [fde, python, os, automation]
 created: 2026-08-24
+type: reference
+domain: language
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # subprocess（调用系统命令）

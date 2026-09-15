@@ -3,6 +3,14 @@ title: Webhook
 aliases: [webhook, 回调, 事件回调, 反向 API]
 tags: [fde, automation, integration, api]
 created: 2026-08-24
+type: reference
+domain: automation
+layer: foundation
+canonical: true
+canonical_group: automation-webhook
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Webhook
@@ -26,9 +34,9 @@ Webhook（Push）：事件一发生，对方 POST 给你 → 实时、省资源
 
 ## 二、FDE 典型用法
 
-- 客户 CRM 新建工单 → Webhook 推给 FDE 服务 → 调 [[LLM API]] 分析 → 结果回写或推 [[Slack]]。
+- 客户 CRM 新建工单 → Webhook 推给 FDE 服务 → 调 [[LLM API]] 分析 → 结果回写或推 Slack。
 - 支付成功事件 → 触发后续业务流。
-- GitHub / SaaS 事件 → 驱动 [[CI/CD]] 或通知。
+- GitHub / SaaS 事件 → 驱动 [[CI-CD|CI/CD]] 或通知。
 
 ```text
 客户 CRM

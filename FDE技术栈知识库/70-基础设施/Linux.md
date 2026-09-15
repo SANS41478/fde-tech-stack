@@ -3,6 +3,14 @@ title: Linux
 aliases: [linux, Linux 命令行, 命令行, Shell, Bash]
 tags: [fde, infra, linux, ops]
 created: 2026-08-24
+type: reference
+domain: infra
+layer: foundation
+canonical: true
+canonical_group: infra-linux
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Linux 与命令行

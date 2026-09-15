@@ -9,7 +9,7 @@
 
 - **原子化笔记**：一个技术 / 概念一篇，便于链接与复用。
 - **双向链接**：全文用 `[[wikilinks]]` 互相连接，图谱视图可见知识网络。
-- **统一结构**：每篇按「定位 → 为什么 → 实战示例 → 常见坑 → 相关笔记」展开。
+- **分层结构**：基础笔记统一采用「定位 → 核心概念 → 实战示例 → 常见坑 → 相关笔记」；长篇专题采用「摘要 → 正文 → 结论 → 参考资料」。
 - **Callout 提示框**：用 Obsidian 原生 `> [!note] / [!tip] / [!warning]` 区分要点、经验与坑。
 - **体系化材料的分散融入**：长篇体系化材料不单开模块，而是拆成原子笔记**分散融入现有板块**并反向增强原有笔记（例：《深入理解 AI Agent》全书 10 章已融入「六、AI」「七、自动化」「十、工程能力」，映射表见 MOC 跨板块主线）。
 
@@ -27,20 +27,27 @@ FDE技术栈知识库/
 ├── 20-前端/                 # React / Next.js / Tailwind CSS / UI UX / 设计系统 / 动效
 ├── 30-后端/                 # Node.js / REST API / API 产品化 / 后端基础 / 微服务
 ├── 40-数据/                 # PostgreSQL / SQL / Redis / ETL / 托管数据库 / Drizzle
-├── 50-AI/                   # LLM API / Prompt / Structured Output / Tool Calling / RAG / Embedding / Agent / MCP / Claude Code 工作流
-│   └── （Agent 进阶）       # Harness 工程 / 上下文工程 / KV Cache / 上下文压缩... 见 MOC「六、AI」
-│       └── DeepSeek Harness 从零到一指南/   # 21 篇源码级拆解
+├── 50-AI/
+│   ├── 10-基础/             # LLM API / Prompt / Structured Output / Tool Calling / Embedding / MCP
+│   ├── 20-RAG与知识/        # RAG / Agentic RAG / 记忆系统
+│   ├── 30-Agent工程/        # Agent / Harness / 上下文 / 工具 / Coding Agent / 多 Agent
+│   ├── 40-评估与进化/       # Agent 评估 / 持续进化 / 模型后训练
+│   └── DeepSeek Harness/    # 21 篇源码级拆解
 ├── 60-自动化/               # Playwright / Webhook / Cron / 事件驱动 Agent / Computer Use
 ├── 70-基础设施/             # Linux / Docker / Docker Compose / 云平台 / 域名 DNS HTTPS / VPS / 1Panel / Serverless / DevOps / CI-CD
-├── 80-系统集成/             # 认证与授权机制 / OAuth / JWT / Web 用户认证与安全 / SaaS 集成 / 企业系统集成
-└── 90-工程能力/             # Git / Debugging / System Design / Agent 评估 / Web 测试 / SEO 与产品分析
+├── 80-系统集成/
+│   ├── 通用认证与安全/      # 认证与授权机制 / OAuth / JWT / Web 用户认证与安全
+│   └── SaaS与企业系统/      # SaaS 集成 / 企业系统集成
+├── 90-工程能力/             # Git / Debugging / System Design / Agent 评估 / Web 测试 / SEO 与产品分析
+└── 专题/
+    └── Palantir/            # Ontology / AIP / FDE 专题
 ```
 
-另有一份原始长文：`FDE（Forward Deployed Engineer）技术栈完整指南.md`，是整套笔记的母本。
+另有一份原始长文：`FDE（Forward Deployed Engineer）技术栈完整指南.md`，现作为归档总览和历史母本，不与 Vault 内原子笔记竞争 canonical 地位。
 
 ## 怎么用
 
-1. 用 **Obsidian** 打开 `FDE技术栈知识库/` 文件夹（或把整个仓库作为 vault）。
+1. 只用 **Obsidian** 打开 `FDE技术栈知识库/` 文件夹作为 Vault 根目录。
 2. 从 `FDE 技术栈 MOC.md` 进入，顺着 `[[双链]]` 浏览。
 3. 打开 **图谱视图（Graph View）** 查看各板块如何连成网络。
 4. 用标签 `#fde` 聚合检索所有笔记。
@@ -65,6 +72,7 @@ FDE技术栈知识库/
 
 - `.workbuddy/` 与 `.obsidian/` 为本地隐私 / 配置数据，已被 `.gitignore` 排除，不纳入版本库。
 - 笔记中的 `[[链接]]` 按笔记名解析，移动文件不会断链。
+- 运行 `python tools/kb_audit.py --strict` 检查断链、MOC 覆盖率、元数据和重复内容。
 
 ---
 

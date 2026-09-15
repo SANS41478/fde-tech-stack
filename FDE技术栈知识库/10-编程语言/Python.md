@@ -3,6 +3,14 @@ title: Python
 aliases: [python, Py, 派森]
 tags: [fde, language, backend, ai]
 created: 2026-08-24
+type: reference
+domain: language
+layer: foundation
+canonical: true
+canonical_group: language-python
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Python

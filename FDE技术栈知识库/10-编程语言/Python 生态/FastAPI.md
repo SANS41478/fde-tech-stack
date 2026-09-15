@@ -3,6 +3,13 @@ title: FastAPI
 aliases: [fastapi, Fast API, Python Web 框架]
 tags: [fde, backend, python, api]
 created: 2026-08-24
+type: reference
+domain: language
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # FastAPI

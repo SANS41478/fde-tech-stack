@@ -3,6 +3,13 @@ title: Redis
 aliases: [redis, Redis 缓存, 内存数据库]
 tags: [fde, database, cache, nosql]
 created: 2026-08-24
+type: reference
+domain: data
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Redis

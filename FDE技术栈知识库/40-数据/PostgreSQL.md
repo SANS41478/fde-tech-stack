@@ -3,6 +3,14 @@ title: PostgreSQL
 aliases: [Postgres, pg, PostgreSQL, 关系型数据库]
 tags: [fde, database, sql, relational]
 created: 2026-08-24
+type: reference
+domain: data
+layer: foundation
+canonical: true
+canonical_group: data-postgres
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # PostgreSQL

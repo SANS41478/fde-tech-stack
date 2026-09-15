@@ -3,6 +3,13 @@ title: Pydantic
 aliases: [Pydantic, pydantic, 数据校验, 配置管理]
 tags: [fde, python, validation, schema]
 created: 2026-08-24
+type: reference
+domain: language
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Pydantic（数据校验 / 配置）

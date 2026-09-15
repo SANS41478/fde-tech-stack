@@ -3,6 +3,13 @@ title: Debugging 与可观测性
 aliases: [Debugging, 可观测性, Observability, 排错, 日志监控]
 tags: [fde, engineering, debugging, observability]
 created: 2026-08-24
+type: reference
+domain: engineering
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Debugging 与可观测性
@@ -89,6 +96,6 @@ Agent 系统把可观测性变得更难：同样的输入可能产生不同输�
 相关笔记：
 - [[Linux]] —— 命令行排错主战场
 - [[Git]] —— 出问题回滚
-- [[CI/CD]] —— 上线与回滚
+- [[CI-CD|CI/CD]] —— 上线与回滚
 - [[Agent 评估]] —— Trace 树、评估闭环与回归任务
 - [[System Design]] —— 在设计阶段就考虑可靠性

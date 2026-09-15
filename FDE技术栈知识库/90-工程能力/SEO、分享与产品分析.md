@@ -3,6 +3,13 @@ title: SEO、分享与产品分析
 aliases: [SEO, Open Graph, OG, Umami, 网站统计, 合规]
 tags: [fde, product, seo, analytics, sharing, compliance]
 created: 2026-09-14
+type: reference
+domain: engineering
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # SEO、分享与产品分析

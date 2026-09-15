@@ -3,6 +3,14 @@ title: React
 aliases: [react, React.js, 组件化 UI]
 tags: [fde, frontend, ui]
 created: 2026-08-24
+type: reference
+domain: frontend
+layer: foundation
+canonical: true
+canonical_group: frontend-react
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # React

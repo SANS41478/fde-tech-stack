@@ -3,6 +3,13 @@ title: SQLAlchemy
 aliases: [SQLAlchemy, ORM, SQLAlchemy ORM, 数据库 ORM]
 tags: [fde, python, database, orm]
 created: 2026-08-24
+type: reference
+domain: language
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # SQLAlchemy（ORM / 数据库）

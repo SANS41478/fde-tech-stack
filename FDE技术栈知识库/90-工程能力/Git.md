@@ -3,6 +3,14 @@ title: Git
 aliases: [git, Git 版本控制, GitHub, GitLab, 版本管理]
 tags: [fde, engineering, git, collaboration]
 created: 2026-08-24
+type: reference
+domain: engineering
+layer: foundation
+canonical: true
+canonical_group: engineering-git
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Git 与工程协作
@@ -37,7 +45,7 @@ git checkout -b feat/crm-sync
 git commit -m "add CRM webhook handler"
   ↓ 推远程、开 PR
 git push -u origin feat/crm-sync
-  ↓ 评审通过 → 合并 → 触发 [[CI/CD]]
+  ↓ 评审通过 → 合并 → 触发 [[CI-CD|CI/CD]]
 ```
 
 ---
@@ -81,6 +89,6 @@ FDE 迭代快，但提交应「一个逻辑一个 commit」，方便回滚与 re
 ---
 
 相关笔记：
-- [[CI/CD]] —— Git 事件触发部署
+- [[CI-CD|CI/CD]] —— Git 事件触发部署
 - [[Docker Compose]] —— .env 与 .gitignore
 - [[企业系统集成]] —— 密钥安全

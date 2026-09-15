@@ -3,6 +3,13 @@ title: FDE 学习路线
 aliases: [FDE 学习顺序, FDE 怎么学, FDE roadmap]
 tags: [fde, concept, learning]
 created: 2026-08-24
+type: concept
+domain: concept
+layer: foundation
+canonical: false
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # FDE 学习路线

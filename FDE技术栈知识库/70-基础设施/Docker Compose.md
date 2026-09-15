@@ -3,6 +3,14 @@ title: Docker Compose
 aliases: [docker-compose, Compose, 容器编排, 多容器]
 tags: [fde, infra, docker, compose]
 created: 2026-08-24
+type: reference
+domain: infra
+layer: foundation
+canonical: true
+canonical_group: infra-compose
+status: active
+updated: 2026-09-15
+sources: []
 ---
 
 # Docker Compose
