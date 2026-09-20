@@ -10,7 +10,9 @@ canonical: true
 canonical_group: engineering-git
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://opentelemetry.io/docs/]
 ---
 
 # Git 与工程协作

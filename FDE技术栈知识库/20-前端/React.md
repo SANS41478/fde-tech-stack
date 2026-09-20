@@ -10,7 +10,9 @@ canonical: true
 canonical_group: frontend-react
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://react.dev/learn]
 ---
 
 # React
@@ -85,6 +87,14 @@ useEffect(() => {
 > - **无限渲染循环**：`useEffect` 依赖写错，导致反复请求。
 > - **key 用 index**：列表渲染用数组下标做 key，数据重排时出 bug，用稳定 id。
 > - **忘了 loading / error 态**：Demo 时接口慢或挂了，界面一片空白，客户体验差。
+
+## 六、组件交付标准
+
+- Props 和状态边界清楚，异步状态不会被重复提交或竞态覆盖。
+- 组件包含默认、加载、空、失败、禁用和权限不足状态。
+- 表单错误与服务端校验一致，不只在浏览器端拦截。
+- 关键交互有键盘路径、可读标签和稳定的测试选择器。
+- 视觉回归或 E2E 只保护业务关键路径，避免快照噪声。
 
 ---
 

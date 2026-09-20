@@ -27,6 +27,8 @@ REQUIRED_FIELDS = {
     "status",
     "created",
     "updated",
+    "reviewed",
+    "stability",
     "sources",
 }
 ALLOWED_VALUES = {
@@ -47,6 +49,7 @@ ALLOWED_VALUES = {
     "layer": {"foundation", "advanced", "implementation", "case-study"},
     "canonical": {"true", "false"},
     "status": {"active", "evolving", "archive"},
+    "stability": {"evergreen", "moving"},
 }
 EXEMPT_FILES = {"README.md"}
 IGNORED_LINK_TARGETS = {"wikilinks", "双链", "链接", "笔记名"}
@@ -139,6 +142,14 @@ def similar_pairs(texts: dict[Path, str], threshold: float = 0.18) -> list[dict[
     return sorted(result, key=lambda item: (-item["score"], item["files"]))
 
 
+def code_fence_issues(texts: dict[Path, str]) -> list[str]:
+    issues = []
+    for path, text in texts.items():
+        if text.count("```") % 2:
+            issues.append(rel(path, repo_root()))
+    return sorted(issues)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON")
@@ -169,6 +180,8 @@ def main() -> int:
         missing = sorted(REQUIRED_FIELDS - set(fields))
         for field in missing:
             missing_fields[field].append(rel(path, root))
+        if fields.get("sources", "").strip() in {"", "[]", '[""]'}:
+            missing_fields["non_empty_sources"].append(rel(path, root))
         for field, allowed in ALLOWED_VALUES.items():
             value = fields.get(field)
             if value and value not in allowed:
@@ -238,6 +251,7 @@ def main() -> int:
         "duplicate_files": duplicate_files,
         "duplicate_paragraphs": duplicate_paragraphs(texts),
         "similar_pairs": similar_pairs(texts),
+        "code_fence_issues": code_fence_issues(texts),
         "canonical_collisions": canonical_collisions,
         "canonical_without_group": canonical_without_group,
     }
@@ -252,6 +266,7 @@ def main() -> int:
         or report["duplicate_files"]
         or report["canonical_collisions"]
         or report["canonical_without_group"]
+        or report["code_fence_issues"]
     )
 
     if args.json:

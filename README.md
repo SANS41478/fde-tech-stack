@@ -37,8 +37,9 @@ FDE技术栈知识库/
 ├── 70-基础设施/             # Linux / Docker / Docker Compose / 云平台 / 域名 DNS HTTPS / VPS / 1Panel / Serverless / DevOps / CI-CD
 ├── 80-系统集成/
 │   ├── 通用认证与安全/      # 认证与授权机制 / OAuth / JWT / Web 用户认证与安全
-│   └── SaaS与企业系统/      # SaaS 集成 / 企业系统集成
+│   └── SaaS与企业系统/      # SaaS 集成 / 企业系统集成 / 集成 Runbook
 ├── 90-工程能力/             # Git / Debugging / System Design / Agent 评估 / Web 测试 / SEO 与产品分析
+├── 模板/                    # 发现简报 / 集成契约 / AI 评估卡 / 上线 Runbook
 └── 专题/
     └── Palantir/            # Ontology / AIP / FDE 专题
 ```
@@ -51,6 +52,12 @@ FDE技术栈知识库/
 2. 从 `FDE 技术栈 MOC.md` 进入，顺着 `[[双链]]` 浏览。
 3. 打开 **图谱视图（Graph View）** 查看各板块如何连成网络。
 4. 用标签 `#fde` 聚合检索所有笔记。
+
+推荐交付路径：
+
+`[[FDE 发现简报]] → [[FDE 交付 Playbook]] → [[系统集成契约]] → [[AI 评估卡]] → [[上线与回滚 Runbook]]`
+
+每篇笔记都应通过 frontmatter 标注 `sources`、`reviewed` 和 `stability`。对模型、API、云服务、Palantir 等易变主题，以官方文档、标准或论文为优先来源；本库原创方法论标注为“本库综合整理”。
 
 ## 职能地图（比「前后端」更全的视角）
 
@@ -72,7 +79,7 @@ FDE技术栈知识库/
 
 - `.workbuddy/` 与 `.obsidian/` 为本地隐私 / 配置数据，已被 `.gitignore` 排除，不纳入版本库。
 - 笔记中的 `[[链接]]` 按笔记名解析，移动文件不会断链。
-- 运行 `python tools/kb_audit.py --strict` 检查断链、MOC 覆盖率、元数据和重复内容。
+- 运行 `python tools/kb_audit.py --strict` 检查断链、MOC 覆盖率、元数据、来源、代码围栏和重复内容。
 
 ---
 

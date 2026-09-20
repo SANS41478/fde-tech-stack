@@ -9,7 +9,9 @@ layer: foundation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://httpwg.org/specs/]
 ---
 
 # API 产品化
@@ -159,6 +161,18 @@ multipart/form-data
 - [ ] 认证、授权和租户隔离在服务端执行。
 - [ ] 文件不落本地容器，密钥不进响应。
 - [ ] 有 API 测试和向后兼容策略。
+
+## 九、契约、兼容与弃用
+
+- OpenAPI/JSON Schema、示例响应和错误码是接口契约的一部分，应纳入版本控制。
+- 新增可选字段通常向后兼容；删除字段、改变类型或改变枚举含义通常不兼容。
+- 对外接口至少记录弃用日期、替代字段、迁移文档和观测指标。
+- 契约测试要由消费者和提供者共同运行，避免“文档正确、实际响应错误”。
+- 每次破坏性变更都要有灰度、双写/双读或回滚路径。
+
+相关笔记：
+- [[数据契约与质量]]
+- [[系统集成 Runbook]]
 
 相关笔记：
 

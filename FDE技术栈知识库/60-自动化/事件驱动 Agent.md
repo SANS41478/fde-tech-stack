@@ -9,7 +9,9 @@ layer: advanced
 canonical: false
 status: evolving
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://spec.openapis.org/oas/latest.html]
 ---
 
 # 交互：异步与事件驱动（含语音）

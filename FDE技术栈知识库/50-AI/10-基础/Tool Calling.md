@@ -10,7 +10,9 @@ canonical: true
 canonical_group: ai-tool-calling
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://platform.openai.com/docs/overview]
 ---
 
 # Tool Calling
@@ -101,6 +103,15 @@ resp = client.chat.completions.create(
 > - **不把结果回传**：调了工具忘了把结果喂回模型，它继续瞎编。
 
 ---
+
+## 六、写工具的发布清单
+
+- 输入 Schema 能拒绝未知字段、越界值和缺少租户上下文。
+- 工具声明副作用、幂等键、超时、取消和所需权限。
+- 只读工具可缓存和并行；写工具默认串行并在执行前确认。
+- 结果包含状态、证据、错误分类和下一步建议，而不是只返回一段字符串。
+- 每次调用记录调用者、版本、参数摘要、结果摘要和审计 ID。
+- 高风险工具经过独立策略检查，不能只依赖模型自我约束。
 
 相关笔记：
 - [[Structured Output]] —— 更基础的结构化

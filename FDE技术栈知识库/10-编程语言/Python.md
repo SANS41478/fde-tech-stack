@@ -10,7 +10,9 @@ canonical: true
 canonical_group: language-python
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://docs.python.org/3/]
 ---
 
 # Python

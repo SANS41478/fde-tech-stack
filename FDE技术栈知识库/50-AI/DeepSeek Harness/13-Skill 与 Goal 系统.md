@@ -14,7 +14,9 @@ layer: implementation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://github.com/deepseek-ai/deepseek-harness]
 ---
 
 # Skill 与 Goal 系统 — 高级能力

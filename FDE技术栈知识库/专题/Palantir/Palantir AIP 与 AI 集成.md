@@ -9,7 +9,9 @@ layer: advanced
 canonical: false
 status: evolving
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://www.palantir.com/docs/foundry/ontology/overview/]
 ---
 
 # Palantir AIP 与 AI 集成

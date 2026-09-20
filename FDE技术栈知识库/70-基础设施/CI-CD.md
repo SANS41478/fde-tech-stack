@@ -10,7 +10,9 @@ canonical: true
 canonical_group: infra-cicd
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://opentelemetry.io/docs/]
 ---
 
 # CI/CD（持续集成与持续部署）
@@ -127,3 +129,15 @@ Pull Request：build / API test / 关键 E2E / 安全扫描
 - [[pytest]] —— 测试怎么写
 - [[部署方式]] —— 部署形态全貌
 - [[Debugging 与可观测性]] —— 上线后要看
+- [[生产就绪与上线 Runbook]] —— 发布、灰度、回滚和事故处理
+
+## 六、流水线的发布门禁
+
+建议把流水线分成四类门禁：
+
+1. **构建门禁**：依赖锁定、编译、Lint、类型检查和镜像扫描。
+2. **行为门禁**：单元、集成、契约、E2E 和 AI 回归。
+3. **安全门禁**：密钥扫描、依赖漏洞、权限和迁移审查。
+4. **运营门禁**：健康检查、灰度、指标、告警和回滚脚本。
+
+AI 生成的代码、测试和流水线配置与人工代码使用同样门禁，不能因为“只是 Demo”而跳过密钥与数据安全检查。

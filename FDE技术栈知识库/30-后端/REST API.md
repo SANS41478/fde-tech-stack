@@ -10,7 +10,9 @@ canonical: true
 canonical_group: backend-api
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://httpwg.org/specs/]
 ---
 
 # REST API 与接口设计

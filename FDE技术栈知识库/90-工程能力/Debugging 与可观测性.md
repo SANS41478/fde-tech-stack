@@ -9,7 +9,9 @@ layer: foundation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://opentelemetry.io/docs/]
 ---
 
 # Debugging 与可观测性
@@ -99,3 +101,4 @@ Agent 系统把可观测性变得更难：同样的输入可能产生不同输�
 - [[CI-CD|CI/CD]] —— 上线与回滚
 - [[Agent 评估]] —— Trace 树、评估闭环与回归任务
 - [[System Design]] —— 在设计阶段就考虑可靠性
+- [[生产就绪与上线 Runbook]] —— 上线、告警、回滚和事故处理

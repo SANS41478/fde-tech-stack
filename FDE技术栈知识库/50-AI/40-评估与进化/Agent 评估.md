@@ -9,7 +9,9 @@ layer: advanced
 canonical: false
 status: evolving
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://platform.openai.com/docs/overview]
 ---
 
 # Agent 的评估
@@ -373,6 +375,18 @@ Coding Agent 初始错误分类示例：
 > - **评判模型与被评 Agent 同源**：古德哈特定律；多源异构评判。
 > - **Rubric 写抽象标准**："展示了深刻理解"无法客观判定；写可验证的具体行为与边界案例。
 > - **给完全失败的任务直接上 RL**：见 [[模型后训练]]——全零 rollout 无梯度。
+
+## 十三、FDE 评估卡的最小字段
+
+每个生产 Agent 都应有一张可版本化的 [[AI 评估卡]]，至少包含：
+
+- 任务分布、正常集、边界集、保留集和对抗集。
+- 成功定义、关键失败、误拒绝和越权定义。
+- 模型、Prompt、工具、检索器和验证器版本。
+- 质量、可靠性、成本、延迟和安全指标。
+- 失败轨迹、根因分类、修复提案和回滚版本。
+
+评估结果不能只给一个总分；必须能回答“哪类任务变好、哪类任务退化、代价增加多少”。
 
 ---
 

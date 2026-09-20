@@ -9,7 +9,9 @@ layer: foundation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://opentelemetry.io/docs/]
 ---
 
 # SEO、分享与产品分析

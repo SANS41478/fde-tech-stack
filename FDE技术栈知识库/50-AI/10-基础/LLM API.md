@@ -10,7 +10,9 @@ canonical: true
 canonical_group: ai-llm-api
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://platform.openai.com/docs/overview]
 ---
 
 # LLM API
@@ -171,6 +173,24 @@ for chunk in resp:
 - 纪律：系统提示词与工具定义一旦确定不要改；动态信息追加到末尾。
 
 ---
+
+## 十、生产调用最小策略
+
+每次模型调用都应显式记录：
+
+- `release_id`、模型版本、Prompt/Schema 版本。
+- 输入/输出 token、缓存命中、耗时和重试次数。
+- 任务类型、租户（脱敏）和结果验证状态。
+
+调用策略按错误分类：
+
+| 错误 | 默认动作 |
+| --- | --- |
+| 429 / 过载 | 尊重等待时间，指数退避并限重试 |
+| 网络抖动 / 5xx | 有界重试，必要时切备用模型 |
+| Schema 失败 | 修复提示或重新请求，仍失败则降级/人工 |
+| 权限 / 参数错误 | 不重试原请求，修正输入或终止 |
+| 超预算 / 超时 | 停止继续生成，返回可解释的部分结果 |
 
 相关笔记：
 - [[Prompt 工程]] —— 怎么写指令

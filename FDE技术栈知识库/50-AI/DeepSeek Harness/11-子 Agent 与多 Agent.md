@@ -15,7 +15,9 @@ layer: implementation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://github.com/deepseek-ai/deepseek-harness]
 ---
 
 # 子 Agent 与多 Agent — 委派与协作

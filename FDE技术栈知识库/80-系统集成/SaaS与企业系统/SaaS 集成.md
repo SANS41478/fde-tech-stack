@@ -10,7 +10,9 @@ canonical: true
 canonical_group: integration-saas
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://www.rfc-editor.org/rfc/rfc6749]
 ---
 
 # SaaS 集成
@@ -101,6 +103,27 @@ FDE Solution
 - **事件驱动**：能用 [[Webhook]] 就别轮询，实时又省额度。
 - **权限申请**：OAuth Scope 按最小需要申请，过客户安全审查。
 
+## 六、连接器的状态与回放
+
+不要把“调用 API”当成完整集成。生产连接器至少要保存：
+
+- 来源事件 ID、租户、游标或更新时间水位。
+- 规范化后的请求/响应摘要和 Schema 版本。
+- 首次处理时间、最后重试时间、错误分类和当前状态。
+- 目标系统返回 ID，以及是否需要补偿或人工处理。
+
+事件处理建议采用“原始事件不可变、规范化结果可重建、写入使用幂等键”的结构。这样既能排障，也能在字段映射修复后安全回放。
+
+## 七、沙盒到生产的迁移
+
+上线前必须对照检查：
+
+- [ ] 沙盒和生产的 base URL、租户、scope、Webhook secret 分开。
+- [ ] 生产账号只拥有必要读写权限。
+- [ ] 生产数据不会被用于未经批准的调试和评估。
+- [ ] 生产切换有小批量、灰度和停止条件。
+- [ ] 迁移后保留旧连接器版本和回滚凭证。
+
 ---
 
 ## 五、常见坑
@@ -118,3 +141,4 @@ FDE Solution
 - [[OAuth]] / [[JWT]] —— 鉴权
 - [[REST API]] / [[Webhook]] —— 连接手段
 - [[FDE 练习项目]] —— AI CRM 助手项目
+- [[系统集成 Runbook]] —— 契约、回放、验收和故障归属

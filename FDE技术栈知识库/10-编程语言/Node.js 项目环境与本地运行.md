@@ -9,7 +9,9 @@ layer: foundation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://nodejs.org/docs/latest/api/]
 ---
 
 # Node.js 项目环境与本地运行

@@ -10,7 +10,9 @@ canonical: true
 canonical_group: integration-oauth
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://www.rfc-editor.org/rfc/rfc6749]
 ---
 
 # OAuth（授权框架）

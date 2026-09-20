@@ -1,4 +1,7 @@
 ---
+reviewed: 2026-09-20
+stability: evergreen
+sources: [本库历史母本；由 Vault 原子笔记持续补充]
 title: FDE（Forward Deployed Engineer）技术栈完整指南
 tags: [fde, guide, archive]
 created: 2026-08-24
@@ -8,7 +11,6 @@ layer: foundation
 canonical: false
 status: archive
 updated: 2026-09-15
-sources: []
 ---
 
 # FDE（Forward Deployed Engineer）技术栈完整指南

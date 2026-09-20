@@ -9,7 +9,9 @@ layer: foundation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://docs.docker.com/]
 ---
 
 # Docker 与 exe 容器化核心概念

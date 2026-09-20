@@ -10,7 +10,9 @@ canonical: true
 canonical_group: automation-webhook
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://spec.openapis.org/oas/latest.html]
 ---
 
 # Webhook
@@ -69,9 +71,19 @@ async def crm_webhook(payload: dict):
 - **签名校验**：验证 `X-Signature` 防伪造（用共享密钥 HMAC）。
 - **限流 / 排队**：突发流量用 [[Redis]] 缓冲。
 
+## 五、重放、防伪与死信
+
+推荐把 Webhook 接收拆成三步：
+
+1. 验证签名、时间戳和事件 ID，拒绝过期或重复请求。
+2. 将原始 payload、来源、接收时间和签名结果写入不可变事件表，快速返回。
+3. 异步消费，成功确认；失败按错误类型重试，超过阈值进入死信队列。
+
+死信记录至少包含事件 ID、租户、来源、最后错误、重试次数和可安全重放的引用。修复消费者后优先在沙盒重放，再按批次恢复生产。
+
 ---
 
-## 四、常见坑
+## 六、常见坑
 
 > [!warning]
 > - **在 Webhook 里做重活**：超时导致对方重试 → 重复处理，必须异步。

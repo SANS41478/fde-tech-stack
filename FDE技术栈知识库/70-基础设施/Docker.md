@@ -10,7 +10,9 @@ canonical: true
 canonical_group: infra-docker
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://docs.docker.com/]
 ---
 
 # Docker
@@ -86,6 +88,15 @@ Redis      → Docker
 > - **数据不挂卷**：容器重建数据丢失，数据库必须 volume。
 > - **镜像巨大**：用 slim 基础镜像 + 多阶段构建，缩小体积、加快拉取。
 > - **容器里跑数据库但不备份**：生产数据必须有备份策略（见 [[PostgreSQL]]）。
+
+## 六、容器生产检查
+
+- 使用非 root 用户，明确文件权限和可写目录。
+- 镜像固定基础版本，定期扫描漏洞并生成可追踪标签。
+- 配置通过运行时注入，不把密钥、生产数据或调试文件打进镜像。
+- 健康检查要能反映真正依赖，优雅关闭要停止接收新任务并等待在途请求。
+- 日志输出到标准输出，使用 `release_id`、`request_id` 和实例标识关联排障。
+- 数据库、队列和对象存储使用独立持久化策略，不把容器生命周期当备份。
 
 ---
 

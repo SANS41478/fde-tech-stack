@@ -9,7 +9,9 @@ layer: advanced
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://platform.openai.com/docs/overview]
 ---
 
 # Claude Code 工作流与项目配置

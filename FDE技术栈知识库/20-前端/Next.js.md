@@ -10,7 +10,9 @@ canonical: true
 canonical_group: frontend-nextjs
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://nextjs.org/docs]
 ---
 
 # Next.js
@@ -89,6 +91,14 @@ export async function GET() {
 > - **密钥放错地方**：`NEXT_PUBLIC_` 前缀的变量会进浏览器，绝不放密钥。
 > - **API Route 变重**：AI 逻辑（模型调用、向量检索）塞进 Next 会让项目臃肿，复杂时拆到 [[FastAPI]]。
 > - **不注意缓存**：Next 默认缓存 fetch，调实时数据要加 `cache: "no-store"`。
+
+## 五、交付检查
+
+- 服务端与客户端边界明确，敏感数据只在服务端处理。
+- Loading、错误、空数据和权限不足状态都可被直接访问和测试。
+- Server Action / API Route 有输入 Schema、认证、授权、限流和审计。
+- 缓存策略写明失效条件，不能把租户数据或实时状态误缓存。
+- 关键页面有移动端、键盘和 E2E 验收。
 
 ---
 

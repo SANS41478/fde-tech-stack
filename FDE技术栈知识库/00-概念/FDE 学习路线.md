@@ -9,7 +9,9 @@ layer: foundation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [本库综合整理；以相关技术主题的官方文档与交付实践为依据]
 ---
 
 # FDE 学习路线

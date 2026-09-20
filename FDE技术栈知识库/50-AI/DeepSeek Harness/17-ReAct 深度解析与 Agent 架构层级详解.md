@@ -16,7 +16,9 @@ layer: implementation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://github.com/deepseek-ai/deepseek-harness]
 ---
 
 # ReAct 深度解析与 Agent 架构层级详解

@@ -14,7 +14,9 @@ layer: implementation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://github.com/deepseek-ai/deepseek-harness]
 ---
 
 # Node.js 与 npm 速成 — 运行环境

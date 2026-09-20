@@ -10,7 +10,9 @@ canonical: true
 canonical_group: ai-structured-output
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://platform.openai.com/docs/overview]
 ---
 
 # Structured Output
@@ -95,6 +97,13 @@ except ValidationError:
 > - **没处理解析失败**：JSON 解析异常要 catch，别让整个请求 500。
 
 ---
+
+## 五、Schema 的演进与验收
+
+- Schema 要有版本，新增可选字段优先，避免无通知删除或改类型。
+- 解析成功不等于业务正确；继续做枚举、范围、权限和状态转换验证。
+- 失败样例要进入回归集，区分模型格式错误、业务校验失败和下游写入失败。
+- 对关键输出保留原始响应、解析结果、验证错误和最终处置，便于审计与回放。
 
 相关笔记：
 - [[LLM API]] —— 调用与成本

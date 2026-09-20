@@ -10,7 +10,9 @@ canonical: true
 canonical_group: automation-cron
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://spec.openapis.org/oas/latest.html]
 ---
 
 # Cron 与定时任务

@@ -10,7 +10,9 @@ canonical: true
 canonical_group: engineering-web-test
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://opentelemetry.io/docs/]
 ---
 
 # Web 测试与 E2E
@@ -143,3 +145,18 @@ FDE 不需要所有功能都严格 TDD；对支付、权限、数据迁移、核
 - [[Web 用户认证与安全]]
 - [[CI-CD|CI/CD]]
 - [[Debugging 与可观测性]]
+- [[系统集成 Runbook]]
+
+## 八、测试矩阵与发布门禁
+
+| 测试层 | 保护什么 | 典型触发 |
+| --- | --- | --- |
+| 单元 | 纯逻辑、解析、映射和权限函数 | 每次提交 |
+| 集成 | 数据库、队列、外部 API 适配 | PR / nightly |
+| 契约 | API、Webhook、Schema 兼容 | 接口变更 |
+| E2E | 关键用户旅程 | 发布前 |
+| 负载 | 并发、队列、限流和 p95 | 里程碑 |
+| 安全 | 越权、注入、敏感日志和依赖 | PR / 定期 |
+| AI 回归 | Prompt、模型、检索和工具变化 | AI 发布 |
+
+Flaky Test 不应靠无限重试隐藏。每次重试都要记录失败类型、环境、Trace 和是否可复现，并在修复或隔离后恢复门禁。

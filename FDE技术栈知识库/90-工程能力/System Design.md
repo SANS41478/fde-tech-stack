@@ -10,7 +10,9 @@ canonical: true
 canonical_group: engineering-system-design
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: evergreen
+sources: [https://opentelemetry.io/docs/]
 ---
 
 # System Design（系统设计）
@@ -88,6 +90,20 @@ Result → Dashboard
 > - **不考虑幂等**：重试引入重复，数据错乱。
 
 ---
+
+## 六、一个设计评审模板
+
+每次方案评审至少回答：
+
+1. 数据从哪里来，谁拥有，多久更新？
+2. 哪些步骤同步，哪些步骤异步？队列积压怎么办？
+3. 外部依赖如何限流、重试、降级和回放？
+4. 哪些操作不可逆，需要确认、审计或补偿？
+5. 数据库、缓存、对象存储和模型调用的容量、成本与备份是什么？
+6. 如何用 `request_id` / `trace_id` 复盘一次完整请求？
+7. 发布失败如何停止流量、回滚应用并恢复数据？
+
+把答案写入 ADR 或 [[上线与回滚 Runbook]]，不要只停留在架构图。
 
 相关笔记：
 - [[ETL 与数据管道]] —— Queue/Worker 落地

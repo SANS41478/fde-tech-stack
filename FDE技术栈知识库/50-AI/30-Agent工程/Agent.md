@@ -10,7 +10,9 @@ canonical: true
 canonical_group: ai-agent
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://platform.openai.com/docs/overview]
 ---
 
 # Agent（智能体）

@@ -15,7 +15,9 @@ layer: implementation
 canonical: false
 status: active
 updated: 2026-09-15
-sources: []
+reviewed: 2026-09-20
+stability: moving
+sources: [https://github.com/deepseek-ai/deepseek-harness]
 ---
 
 # Agent Loop 深度拆解 — ReAct 循环的源码级讲解
